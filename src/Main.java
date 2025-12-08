@@ -87,7 +87,7 @@ public class Main {
                     } else if (seleccion == 3) {
                         Barco nave = miFlota[1];
                         if (nave.estaHundido()) {
-                            System.out.println("COMANDANTE: El acorazado no responde. Ha sido hundido.");
+                            System.out.println("COMANDANTE: El acorazado no responde. Ha sido hundido :(.");
                         }
                         else {
                             System.out.println("FIla del ataque de racimo: ");
