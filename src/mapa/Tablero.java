@@ -81,4 +81,11 @@ public class Tablero {
         return true;
     }
 
+    public Casilla getCasilla(int fila, int col) {
+        if (fila >= 0 && fila < 10 && col >= 0 && col < 10) {
+            return casillas[fila][col];
+        }
+        return null;
+    }
+
 }
