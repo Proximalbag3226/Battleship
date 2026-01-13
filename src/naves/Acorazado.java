@@ -25,4 +25,16 @@ public class Acorazado extends Barco{
         }
         return "Disparos en area lanzados";
     }
+
+
+    @Override
+    public void recibirDisparo1() {
+        this.vida--;
+
+        if (estaHundido()) {
+            System.out.println("!!Acorazado caidooo su poder de fuego ah caido!!");
+        } else {
+            System.out.println("Acorazado enemigo dañado");
+        }
+    }
 }

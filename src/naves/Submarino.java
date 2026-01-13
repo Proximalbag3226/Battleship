@@ -27,4 +27,16 @@ public class Submarino extends Barco {
         }
         return "No hay nada en esa zona :(";
     }
+
+    @Override
+    public void recibirDisparo1() {
+        this.vida--;
+
+        if (estaHundido()) {
+            System.out.println("!!Submarino enemigo destruido, su radar fue debilitado!!");
+        } else {
+            System.out.println("Submarino enemigo dañado");
+        }
+    }
+
 }

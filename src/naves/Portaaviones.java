@@ -30,4 +30,15 @@ public class Portaaviones extends Barco{
         }
         return reporte.toString();
     }
+
+    @Override
+    public void recibirDisparo1() {
+        this.vida--;
+
+        if (estaHundido()) {
+            System.out.println("!!Portaaviones enemigo destruido su flota aerea esta cayendo!!");
+        } else {
+            System.out.println("Portaaviones enemigo dañado");
+        }
+    }
 }
